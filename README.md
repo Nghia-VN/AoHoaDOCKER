@@ -2,7 +2,7 @@
 # WEB_DEMO
 
 
-## Công nghệ 
+## Công nghệ sử dụng
 
 - Laravel 8
 - Vue 2 + VueRouter + vue-progressbar + sweetalert2 + laravel-vue-pagination
@@ -22,16 +22,16 @@
 - Bảng điều khiển tĩnh đơn giản
 - Xây dựng với Docker
 
-##Install Docker Engine on CentOS
+## Cài đặt Docker Engine trên CentOS
 - https://docs.docker.com/engine/install/centos/
 
-##Install Docker Engine on Debian
+## Cài đặt Docker Engine trên Debian
 - https://docs.docker.com/engine/install/debian/
 
-##Install Docker Engine on Ubuntu
+## Cài đặt Docker Engine trên ubuntu Ubuntu
 - https://docs.docker.com/engine/install/ubuntu/
 
-##Install Docker Desktop on Windows
+## Cài đặt Docker Desktop trên Windows
 -https://docs.docker.com/desktop/install/windows-install/
 
 ## Hướng dẫn sử dụng Docker
