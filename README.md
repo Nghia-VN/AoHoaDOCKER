@@ -34,7 +34,7 @@
 ## Cài đặt Docker Desktop trên Windows
 -https://docs.docker.com/desktop/install/windows-install/
 
-## Hướng dẫn sử dụng Docker
+## Hướng dẫn ảo hóa với Docker
 Khởi động terminal và gõ lần lượt các commands sau:
 ``` shell
 docker compose up -d
