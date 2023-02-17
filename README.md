@@ -37,15 +37,28 @@
 ## Hướng dẫn ảo hóa với Docker
 Khởi động terminal và gõ lần lượt các commands sau:
 ``` shell
-docker compose up -d
+docker compose up -d ```
+``` shell
 docker exec -it vue-starter /bin/bash
+```
+``` shell
 composer install
+```
+``` shell
 cp .env.example .env
+```
+``` shell
 php artisan key:generate
-php artisan migrate
+```
+``` shell
+php artisan migrate 
+```
+``` shell
 php artisan db:seed
+```
+``` shell
 php artisan passport:install
 ```
-- Chạy app tại http://localhost:8008/
+- APP http://localhost:8008/
 - Database http://localhost:8080/
 - DBhost: yourIP:3307, user: root, Password: 123456
