@@ -32,7 +32,7 @@
 - https://docs.docker.com/engine/install/ubuntu/
 
 ## Cài đặt Docker Desktop trên Windows
--https://docs.docker.com/desktop/install/windows-install/
+- https://docs.docker.com/desktop/install/windows-install/
 
 ## Hướng dẫn ảo hóa với Docker
 Khởi động terminal và gõ lần lượt các commands sau:
