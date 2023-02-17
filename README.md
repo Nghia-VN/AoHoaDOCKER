@@ -36,7 +36,7 @@
 
 ## Hướng dẫn sử dụng Docker
 Khởi động terminal và gõ lần lượt các commands sau:
-/// docker compose up -d
+'''''' docker compose up -d
 - docker exec -it vue-starter /bin/bash
 - composer install
 - cp .env.example .env
