@@ -37,7 +37,8 @@
 ## Hướng dẫn ảo hóa với Docker
 Khởi động terminal và gõ lần lượt các commands sau:
 ``` shell
-docker compose up -d ```
+docker compose up -d 
+```
 ``` shell
 docker exec -it vue-starter /bin/bash
 ```
