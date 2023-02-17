@@ -36,14 +36,16 @@
 
 ## Hướng dẫn sử dụng Docker
 Khởi động terminal và gõ lần lượt các commands sau:
-'''''' docker compose up -d
-- docker exec -it vue-starter /bin/bash
-- composer install
-- cp .env.example .env
-- php artisan key:generate
-- php artisan migrate
-- php artisan db:seed
-- php artisan passport:install
+``` shell
+docker compose up -d
+docker exec -it vue-starter /bin/bash
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+php artisan db:seed
+php artisan passport:install
+```
 - Chạy app tại http://localhost:8008/
 - Database http://localhost:8080/
 - DBhost: yourIP:3307, user: root, Password: 123456
