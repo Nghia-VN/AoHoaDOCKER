@@ -4,7 +4,7 @@
         <router-link to="/dashboard" class="nav-link">
           <i class="nav-icon fas fa-tachometer-alt blue"></i>
           <p>
-            Dashboard
+            Trang chủ
           </p>
         </router-link>
       </li>
@@ -13,7 +13,7 @@
         <router-link to="/products" class="nav-link">
           <i class="nav-icon fas fa-list orange"></i>
           <p>
-            Product
+            Sản Phẩm
           </p>
         </router-link>
       </li>
@@ -34,7 +34,7 @@
         <a href="#" class="nav-link">
           <i class="nav-icon fas fa-cog green"></i>
           <p>
-            Settings
+            Cài đặt
             <i class="right fas fa-angle-left"></i>
           </p>
         </a>
@@ -44,7 +44,7 @@
             <router-link to="/product/category" class="nav-link">
               <i class="nav-icon fas fa-list-ol green"></i>
               <p>
-                Category
+                Loại
               </p>
             </router-link>
           </li>
@@ -52,7 +52,7 @@
             <router-link to="/product/tag" class="nav-link">
               <i class="nav-icon fas fa-tags green"></i>
               <p>
-                Tags
+                Thẻ
               </p>
             </router-link>
           </li>
@@ -61,7 +61,7 @@
               <router-link to="/developer" class="nav-link">
                   <i class="nav-icon fas fa-cogs white"></i>
                   <p>
-                      Developer
+                      Đang phát triển
                   </p>
               </router-link>
             </li>

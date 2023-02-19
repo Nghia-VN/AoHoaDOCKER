@@ -7,22 +7,22 @@
                     <div class="card">
                         <div class="card-header p-2">
                             <ul class="nav nav-pills">
-                                <li class="nav-item"><a class="nav-link" href="#activity" data-toggle="tab">Activity</a></li>
-                                <li class="nav-item"><a class="nav-link active show" href="#settings" data-toggle="tab">Settings</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#change-password" data-toggle="tab">Change Password</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#activity" data-toggle="tab">đang hoạt động</a></li>
+                                <li class="nav-item"><a class="nav-link active show" href="#settings" data-toggle="tab">Cài đặt</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#change-password" data-toggle="tab">Đổi mật khẩu</a></li>
                             </ul>
                         </div><!-- /.card-header -->
                         <div class="card-body">
                             <div class="tab-content">
                                 <!-- Activity Tab -->
                                 <div class="tab-pane" id="activity">
-                                    <h3 class="text-center">Display User Activity</h3>
+                                    <h3 class="text-center">Trạng thái người dùng</h3>
                                 </div>
                                 <!-- Setting Tab -->
                                 <div class="tab-pane active show" id="settings">
                                     <form @click.prevent="updateInfo" class="form-horizontal">
                                         <div class="form-group">
-                                            <label for="inputName" class="col-sm-2 control-label">Name</label>
+                                            <label for="inputName" class="col-sm-2 control-label">Tên</label>
 
                                             <div class="col-sm-12">
                                             <input type="" v-model="form.name" class="form-control" id="inputName" placeholder="Name" :class="{ 'is-invalid': form.errors.has('name') }">
@@ -39,8 +39,8 @@
                                         </div>
                                         <div class="form-group">
                                             <div class="col-md-12">
-                                                <button type="submit" class="btn btn-success">Update Profile</button>
-                                                <div class="float-right d-sm-inline text-muted">Member since: <span>{{form.created_at|myDate}}</span></div>
+                                                <button type="submit" class="btn btn-success">Cập nhập</button>
+                                                <div class="float-right d-sm-inline text-muted">Ngày đăng ký<span>{{form.created_at|myDate}}</span></div>
                                             </div>
                                         </div>
                                     </form>
@@ -50,7 +50,7 @@
                                 <div class="tab-pane" id="change-password">
                                     <form class="form-horizontal">
                                     <div class="form-group">
-                                        <label for="current_password" class="col-sm-2 control-label">Current Password</label>
+                                        <label for="current_password" class="col-sm-2 control-label">Mật khẩu</label>
 
                                         <div class="col-sm-12">
                                             <input type="password"
@@ -65,7 +65,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="new_password" class="col-sm-2 control-label">New Password</label>
+                                        <label for="new_password" class="col-sm-2 control-label">Mật khẩu mới</label>
 
                                         <div class="col-sm-12">
                                             <input type="password"
@@ -80,7 +80,7 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="confirm_password" class="col-sm-2 control-label">Confirm Password</label>
+                                        <label for="confirm_password" class="col-sm-2 control-label">Xác nhận mật khẩu</label>
 
                                         <div class="col-sm-12">
                                             <input type="password"
@@ -96,7 +96,7 @@
 
                                     <div class="form-group">
                                         <div class="col-sm-offset-2 col-sm-12">
-                                        <button @click.prevent="updatePassword" type="submit" class="btn btn-success">Update Password</button>
+                                        <button @click.prevent="updatePassword" type="submit" class="btn btn-success">Cập nhập mật khẩu</button>
                                         </div>
                                     </div>
                                     </form>

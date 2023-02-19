@@ -7,13 +7,13 @@
         
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Tag List</h3>
+                <h3 class="card-title">Danh sách thẻ</h3>
 
                 <div class="card-tools">
                   
                   <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#addNew">
                       <i class="fa fa-plus-square"></i>
-                      Add New
+                      Thêm mới
                   </button>
                 </div>
               </div>
@@ -23,7 +23,7 @@
                   <thead>
                     <tr>
                       <th>ID</th>
-                      <th>Name</th>
+                      <th>Tên</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -48,7 +48,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Create New Tag</h5>
+                    <h5 class="modal-title" id="exampleModalLongTitle">Tạo thẻ mới</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -57,15 +57,15 @@
                 <form @submit.prevent="createTag">
                     <div class="modal-body">
                             <div class="form-group">
-                                <label>Name</label>
+                                <label>Tên</label>
                                 <input v-model="form.name" type="text" name="name"
                                     class="form-control" :class="{ 'is-invalid': form.errors.has('name') }">
                                 <has-error :form="form" field="name"></has-error>
                             </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Create</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                        <button type="submit" class="btn btn-primary">Tạo</button>
                     </div>
                   </form>
                 </div>

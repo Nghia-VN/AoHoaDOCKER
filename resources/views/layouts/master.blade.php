@@ -43,7 +43,7 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <router-link to="/dashboard" class="brand-link">
-      <img src="{{ asset('/images/logo.png') }}" alt="The Logo" class="brand-image img-circle elevation-3"
+      <img src="{{ asset('/images/Logo_HAU.png') }}" alt="The Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
       <span class="brand-text font-weight-light">{{ config('app.name', 'Laravel') }}</span>
     </router-link>
@@ -93,34 +93,18 @@
         </div><!-- /.row --> --}}
       </div><!-- /.container-fluid -->
     </div>
-    <!-- /.content-header -->
+   
 
-    <!-- Main content -->
+
     <router-view></router-view>
 
     <vue-progress-bar></vue-progress-bar>
 
     {{-- /.content --}}
   </div>
-  {{-- /.content-wrapper --}}
-
-  {{-- Main Footer --}}
-  <footer class="main-footer">
-    {{-- To the right --}}
-    <div class="float-right d-none d-sm-block">
-      <b>Version</b> 3.0.0
-    </div>
-    {{-- Default to the left --}}
-    <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
-  </footer>
 </div>
-{{-- ./wrapper --}}
 
-@auth
-<script>
-    window.user = @json(auth()->user())
-</script>
-@endauth
+
 <script src="{{ mix('/js/app.js') }}"></script>
 </body>
 </html>

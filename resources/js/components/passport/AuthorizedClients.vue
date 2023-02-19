@@ -8,15 +8,12 @@
     <div>
         <div v-if="tokens.length > 0">
             <div class="card card-default">
-                <div class="card-header">Authorized Applications</div>
-
                 <div class="card-body">
-                    <!-- Authorized Tokens -->
                     <table class="table table-borderless mb-0">
                         <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Scopes</th>
+                                <th>Tên</th>
+                                <th>Phạm vi</th>
                                 <th></th>
                             </tr>
                         </thead>
@@ -52,40 +49,28 @@
 
 <script>
     export default {
-        /*
-         * The component's data.
-         */
+       
         data() {
             return {
                 tokens: []
             };
         },
 
-        /**
-         * Prepare the component (Vue 1.x).
-         */
+        
         ready() {
             this.prepareComponent();
         },
 
-        /**
-         * Prepare the component (Vue 2.x).
-         */
         mounted() {
             this.prepareComponent();
         },
 
         methods: {
-            /**
-             * Prepare the component (Vue 2.x).
-             */
+          
             prepareComponent() {
                 this.getTokens();
             },
 
-            /**
-             * Get all of the authorized tokens for the user.
-             */
             getTokens() {
                 axios.get('/oauth/tokens')
                         .then(response => {
@@ -93,9 +78,6 @@
                         });
             },
 
-            /**
-             * Revoke the given token.
-             */
             revoke(token) {
                 axios.delete('/oauth/tokens/' + token.id)
                         .then(response => {
